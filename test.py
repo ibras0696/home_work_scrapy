@@ -41,8 +41,8 @@ process.start()
 
 data = data_collector.items
 print(data)
-# # Выводим результаты
-# print(f"\nСпарсено {len(data_collector.items)} товаров:")
-# for item in data_collector.items:
-#     print(f"{item['product']} - {item['price']}")
-#     print(f"Ссылка: {item['link']}\n")
+# Выводим результаты
+print(f"\nСпарсено {len(data_collector.items)} товаров:")
+for item in data_collector.items:
+    print(f"{item['product']} - {item['price']}")
+    print(f"Ссылка: {item['link']}\n")

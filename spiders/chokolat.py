@@ -25,12 +25,12 @@ class ChokolatSpider(scrapy.Spider):
         img_product = response.css('div.product-item__image-wrapper > a > img::attr(src)').extract()
         data = zip(name_product, price_product, link_product,img_product)
 
-        print('-----------------------------')
-        print(name_product)
-        print(price_product)
-        print(link_product)
-        print(img_product)
-        print('-----------------------------')
+        # print('-----------------------------')
+        # print(name_product)
+        # print(price_product)
+        # print(link_product)
+        # print(img_product)
+        # print('-----------------------------')
         for elem in data:
             dct_result = {
                 'product': elem[0].strip(),
